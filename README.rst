@@ -35,12 +35,12 @@ to be added to the Github repo.
       runs-on: ubuntu-latest
       name: Publish docs to confluence
       steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v1  # Only required if you have multiple python deps
         with:
           python-version: '3.x'
       - name: publish to confluence
-        uses: pratikmallya/publish-confluence@master
+        uses: jelliott-liveramp/publish-confluence@master
         with:
           username: ${{ secrets.atlassianUsername }}
           apitoken: ${{ secrets.atlassianApitoken }}
