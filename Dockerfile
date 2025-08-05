@@ -6,7 +6,7 @@ RUN pip install \
   Sphinx==2.4.4 \
   sphinxcontrib-confluencebuilder \
   recommonmark \
-  m2r2
+  m2r2 \
   myst-parser
 
 COPY entrypoint entrypoint
