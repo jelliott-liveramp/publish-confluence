@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.11
 
 USER root
 
@@ -7,6 +7,7 @@ RUN pip install \
   sphinxcontrib-confluencebuilder \
   recommonmark \
   m2r2
+  myst-parser
 
 COPY entrypoint entrypoint
 
